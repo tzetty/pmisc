@@ -1,0 +1,53 @@
+A1,10,Azurite,,Transmutation
+A2,10,Banded agate,,Enchantment
+A3,10,Blue quartz,,Transmutation
+A4,10,Eye agate,,Illusion
+A5,10,Hematite,,Necromancy
+A6,10,Lapis lazuli,,Enchantment
+A7,10,Malachite,,Conjuration
+A8,10,Moss agate,,Abjuration
+A9,10,Obsidian,,Necromancy
+A10,10,Rhodochrosite,,Evocation
+A11,10,Tiger eye,,Abjuration
+A12,10,Turquoise,,Conjuration
+B1,50,Bloodstone,,Evocation
+B2,50,Carnelian,,Divination
+B3,50,Chalcedony,,Illusion
+B4,50,Chrysoprase,,Conjuration
+B5,50,Citrine,,Abjuration
+B6,50,Jasper,,Necromancy
+B7,50,Moonstone,,Illusion
+B8,50,Onyx,,Necromancy
+B9,50,Quartz,,Illusion
+B10,50,Sardonyx,,Evocation
+B11,50,Star rose quartz,,Evocation
+B12,50,Zircon,,Enchantment
+C1,100,Amber,Air,Abjuration
+C2,100,Amethyst,Air,Enchantment
+C3,100,Crysoberyl,Fire,Abjuration
+C4,100,Coral,Earth,Evocation
+C5,100,Garnet,Water,Evocation
+C6,100,Jade,Air,Conjuration
+C7,100,Jet,Air,Necromancy
+C8,100,Pearl,,Illusion
+C9,100,Spinel,Water,Illusion
+C10,100,Tourmaline,Water,Enchantment
+D1,500,Alexandrite,Water,Illusion
+D2,500,Aquamarine,Water,Conjuration
+D3,500,Black pearl,,Necromancy
+D4,500,Blue spinel,Air,Transmutation
+D5,500,Peridot,Earth,Conjuration
+D6,500,Topaz,Fire,Abjuration
+D7,500,Shadowstone,Earth,Illusion
+E1,1000,Black opal,Water,Necromancy
+E2,1000,Blue sapphire,Air,Transmutation
+E3,1000,Emerald,Earth,Conjuration
+E4,1000,Fire opal,Fire,Enchantment
+E5,1000,Opal,Earth,Evocation
+E6,1000,Star Ruby,Fire,Evocation
+E7,1000,Star sapphire,Fire,Transmutation
+E8,1000,Yellow sapphire,Fire,Abjuration
+F1,5000,Black sapphire,Air,Necromancy
+F2,5000,Diamond,Earth,Illusion
+F3,5000,Jacinth,Earth,Divination
+F4,5000,Ruby,Fire,Evocation
