@@ -46,6 +46,18 @@ def read_file(filename):
     ff.close()
     return txt
 
+def read_file_as_dict(filename):
+    result = {}
+    stripped = [x.strip() for x in read_file(filename).split('\n')]
+    lines = [x for x in stripped if len(x) > 0 and x[0] != '#']
+    for line in lines:
+        assert '=' in line
+        parts = [x.strip() for x in line.split('=')]
+        assert len(parts) == 2
+        result[parts[0]] = parts[1]
+
+    return result
+
 def parse_csv_line(txt):
     return [x.strip() for x in txt.split(',')]
 

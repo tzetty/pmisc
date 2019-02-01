@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# pwalk.py config file
+roots.txt
+
 # Distribution / packaging
 .Python
 build/
