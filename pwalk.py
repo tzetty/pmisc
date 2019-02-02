@@ -1,17 +1,42 @@
 import sys
-import random
 import os
-import dlib
 
 DIRNAME_ONLY = 'DIRNAME_ONLY'
+DEFAULT_ROOTS_FILLENAME = 'roots.txt'
+
+def local_read_file(filename):
+    ff = open(filename, 'r')
+    txt = ff.read()
+    ff.close()
+    return txt
+
+def local_read_file_as_dict(filename):
+    result = {}
+    stripped = [x.strip() for x in local_read_file(filename).split('\n')]
+    lines = [x for x in stripped if len(x) > 0 and x[0] != '#']
+    for line in lines:
+        assert '=' in line
+        parts = [x.strip() for x in line.split('=')]
+        assert len(parts) == 2
+        result[parts[0]] = parts[1]
+
+    return result
 
 def get_root_value(arg):
+    roots_filename = DEFAULT_ROOTS_FILLENAME
+
     if arg == '@':
-        return dlib.read_file('roots.txt').strip()
+        return local_read_file(roots_filename).strip()
 
     if arg[0] == '@':
-        rdict = dlib.read_file_as_dict('roots.txt')
         rkey = arg[1:]
+        if '::' in rkey:
+            parts = rkey.split('::')
+            assert len(parts) == 2
+            roots_filename = parts[0]
+            rkey = parts[1]
+
+        rdict = local_read_file_as_dict(roots_filename)
         assert rkey in rdict
         return rdict[rkey]
 
